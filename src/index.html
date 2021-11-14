@@ -14,13 +14,14 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
-	<div class="message" id='test' style="display: none;">
+	<div id='test' style="display: none;">
 		Something like a text
 	</div>
 	<script>
 	function createNewBlock() {
 	let block = document.createElement('div');
 	block.innerText = document.getElementById('test').innerText;
+	block.className = "message";
 	document.body.appendChild(block);
 	}
 	function multiple() {
